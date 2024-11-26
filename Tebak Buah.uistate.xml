@@ -10,8 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Layout 1</layout>
-        <event-sheet order="1">Event sheet 1</event-sheet>
+        <layout order="1">Tampilan Awal</layout>
+        <layout order="2">Trivia</layout>
+        <layout active="1" order="3">Quis Level 1</layout>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -28,5 +29,71 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/Play/" />
+        <folder expanded="1" path="animation-folder/Play/New folder/" />
+        <folder expanded="1" path="animation-folder/Settings/" />
+        <folder expanded="1" path="animation-folder/About/" />
+        <folder expanded="1" path="animation-folder/TEBAKBUAH/" />
+        <folder expanded="1" path="animation-folder/BlackOpacity/" />
+        <folder expanded="1" path="animation-folder/TableBuah/" />
+        <folder expanded="1" path="animation-folder/prew/" />
+        <folder expanded="1" path="animation-folder/next/" />
+        <folder expanded="1" path="animation-folder/Lemon/" />
+        <folder expanded="1" path="animation-folder/Alpukat/" />
+        <folder expanded="1" path="animation-folder/Anggur/" />
+        <folder expanded="1" path="animation-folder/Apel/" />
+        <folder expanded="1" path="animation-folder/Kiwi/" />
+        <folder expanded="1" path="animation-folder/Manggis/" />
+        <folder expanded="1" path="animation-folder/MentigiBiru/" />
+        <folder expanded="1" path="animation-folder/Persik/" />
+        <folder expanded="1" path="animation-folder/Pisang/" />
+        <folder expanded="1" path="animation-folder/Semangka/" />
+        <folder expanded="1" path="animation-folder/Stroberi/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/Sprite6/" />
+        <folder expanded="1" path="animation-folder/Sprite7/" />
+        <folder expanded="1" path="animation-folder/Sprite8/" />
+        <folder expanded="1" path="animation-folder/Sprite9/" />
+        <folder expanded="1" path="animation-folder/Sprite10/" />
+        <folder expanded="1" path="animation-folder/T_Alpukat/" />
+        <folder expanded="1" path="animation-folder/T_Anggur/" />
+        <folder expanded="1" path="animation-folder/T_Apel/" />
+        <folder expanded="1" path="animation-folder/T_Kiwi/" />
+        <folder expanded="1" path="animation-folder/T_Lemon/" />
+        <folder expanded="1" path="animation-folder/T_Manggis/" />
+        <folder expanded="1" path="animation-folder/T_Persik/" />
+        <folder expanded="1" path="animation-folder/T_Pisang/" />
+        <folder expanded="1" path="animation-folder/T_Semangka/" />
+        <folder expanded="1" path="animation-folder/T_Stoberi/" />
+        <folder expanded="1" path="animation-folder/T_T_Anggur/" />
+        <folder expanded="1" path="animation-folder/T_T_Apel/" />
+        <folder expanded="1" path="animation-folder/T_T_Kiwi/" />
+        <folder expanded="1" path="animation-folder/T_T_Lemon/" />
+        <folder expanded="1" path="animation-folder/T_T_Manggis/" />
+        <folder expanded="1" path="animation-folder/T_T_Persik/" />
+        <folder expanded="1" path="animation-folder/T_T_Pisang/" />
+        <folder expanded="1" path="animation-folder/T_T_Semangka/" />
+        <folder expanded="1" path="animation-folder/T_T_Stoberi/" />
+        <folder expanded="1" path="animation-folder/up/" />
+        <folder expanded="1" path="animation-folder/BuahApakahIni_/" />
+        <folder expanded="1" path="animation-folder/btn_alpukat/" />
+        <folder expanded="1" path="animation-folder/btn_anggur/" />
+        <folder expanded="1" path="animation-folder/btn_apel/" />
+        <folder expanded="1" path="animation-folder/btn_kiwi/" />
+        <folder expanded="1" path="animation-folder/btn_lemon/" />
+        <folder expanded="1" path="animation-folder/btn_manggis/" />
+        <folder expanded="1" path="animation-folder/btn_persik/" />
+        <folder expanded="1" path="animation-folder/btn_pisang/" />
+        <folder expanded="1" path="animation-folder/btn_semangka/" />
+        <folder expanded="1" path="animation-folder/btn_coba/" />
+        <folder expanded="1" path="animation-folder/btn_lanjut/" />
+        <folder expanded="1" path="animation-folder/popupL/" />
+        <folder expanded="1" path="animation-folder/popupwin/" />
+        <folder expanded="1" path="animation-folder/btn_coba2/" />
+        <folder expanded="1" path="animation-folder/btn_lanjut2/" />
     </folders-expanded>
 </c2uistate>
