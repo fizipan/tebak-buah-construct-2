@@ -10,10 +10,13 @@
     <unique-id>8ujuedpcdo98</unique-id>
     <saved-with-version>28000</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
     </used-plugins>
     <used-behaviors />
     <used-effects />
@@ -69,6 +72,9 @@
         </object-type>
         <object-type name="Text" sid="296035965069393">
             <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="id" sid="419371218433583" type="number" />
+            </instance-variables>
         </object-type>
         <object-type name="Settings" sid="761993208098795">
             <plugin id="Sprite" />
@@ -853,21 +859,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="T_Stoberi" sid="273248025796713">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="873939982667210" speed="5">
-                    <frame duration="1" hotspotX="0.501124" hotspotY="0.503311" original-source="E:\Asset\Jungle-GUI-PNG\PNG\fruits\T_Stoberi.png">
-                        <collision-poly>
-                            <point x="0.498876" y="0.370861" />
-                            <point x="0.678652" y="0.496689" />
-                            <point x="0.498876" y="0.708609" />
-                            <point x="0.278652" y="0.496689" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="T_T_Anggur" sid="378980165469156">
             <plugin id="Sprite" />
             <animation-folder>
@@ -1264,44 +1255,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="popupL" sid="431439846202362">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="690416307336961" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.501144" original-source="E:\Asset\Jungle-GUI-PNG\PNG\bubble\popup-L.png">
-                        <collision-poly>
-                            <point x="0.0201342" y="0.02746" />
-                            <point x="0.5" y="0" />
-                            <point x="0.966443" y="0.0457666" />
-                            <point x="0.983221" y="0.498856" />
-                            <point x="0.966443" y="0.954233" />
-                            <point x="0.5" y="0.979405" />
-                            <point x="0.033557" y="0.954233" />
-                            <point x="0.00503356" y="0.498856" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="popupwin" sid="214216029923827">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="819298942086452" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.501144" original-source="E:\Asset\Jungle-GUI-PNG\PNG\bubble\popup-win.png">
-                        <collision-poly>
-                            <point x="0.0201342" y="0.02746" />
-                            <point x="0.5" y="0" />
-                            <point x="0.966443" y="0.0457666" />
-                            <point x="0.983221" y="0.498856" />
-                            <point x="0.966443" y="0.954233" />
-                            <point x="0.5" y="0.979405" />
-                            <point x="0.033557" y="0.954233" />
-                            <point x="0.00503356" y="0.498856" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="btn_coba2" sid="658043940859242">
             <plugin id="Sprite" />
             <animation-folder>
@@ -1340,6 +1293,192 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Alpukat2" sid="462158309201698">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="10" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="101507139590332" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Asset\Jungle-GUI-PNG\PNG\fruits\Alpukat.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0.0292969" />
+                            <point x="0.730469" y="0.269531" />
+                            <point x="0.904297" y="0.5" />
+                            <point x="0.863281" y="0.863281" />
+                            <point x="0.5" y="0.988281" />
+                            <point x="0.199219" y="0.800781" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Asset\Jungle-GUI-PNG\PNG\fruits\Anggur.png">
+                        <collision-poly>
+                            <point x="0.144531" y="0.144531" />
+                            <point x="0.5" y="0.0722656" />
+                            <point x="0.933594" y="0.5" />
+                            <point x="0.789063" y="0.789063" />
+                            <point x="0.5" y="0.986328" />
+                            <point x="0.238281" y="0.761719" />
+                            <point x="0.134766" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Asset\Jungle-GUI-PNG\PNG\fruits\Apel.png">
+                        <collision-poly>
+                            <point x="0.179688" y="0.179688" />
+                            <point x="0.5" y="0.203125" />
+                            <point x="0.832031" y="0.167969" />
+                            <point x="0.982422" y="0.5" />
+                            <point x="0.863281" y="0.863281" />
+                            <point x="0.5" y="0.984375" />
+                            <point x="0.154297" y="0.845703" />
+                            <point x="0.0136719" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Asset\Jungle-GUI-PNG\PNG\fruits\Kiwi.png">
+                        <collision-poly>
+                            <point x="0.201172" y="0.201172" />
+                            <point x="0.5" y="0.09375" />
+                            <point x="0.833984" y="0.166016" />
+                            <point x="0.953125" y="0.5" />
+                            <point x="0.814453" y="0.814453" />
+                            <point x="0.5" y="0.916016" />
+                            <point x="0.191406" y="0.808594" />
+                            <point x="0.0527344" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Asset\Jungle-GUI-PNG\PNG\fruits\Lemon.png">
+                        <collision-poly>
+                            <point x="0.228516" y="0.228516" />
+                            <point x="0.5" y="0.0566406" />
+                            <point x="0.849609" y="0.150391" />
+                            <point x="0.908203" y="0.5" />
+                            <point x="0.769531" y="0.769531" />
+                            <point x="0.5" y="0.941406" />
+                            <point x="0.152344" y="0.847656" />
+                            <point x="0.0898438" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Asset\Jungle-GUI-PNG\PNG\fruits\Manggis.png">
+                        <collision-poly>
+                            <point x="0.171875" y="0.171875" />
+                            <point x="0.5" y="0.0722656" />
+                            <point x="0.792969" y="0.207031" />
+                            <point x="0.933594" y="0.5" />
+                            <point x="0.820313" y="0.820313" />
+                            <point x="0.5" y="0.960938" />
+                            <point x="0.179688" y="0.820313" />
+                            <point x="0.0683594" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Asset\Jungle-GUI-PNG\PNG\fruits\Persik.png">
+                        <collision-poly>
+                            <point x="0.183594" y="0.183594" />
+                            <point x="0.5" y="0.0351563" />
+                            <point x="0.845703" y="0.154297" />
+                            <point x="0.988281" y="0.5" />
+                            <point x="0.835938" y="0.835938" />
+                            <point x="0.5" y="0.972656" />
+                            <point x="0.189453" y="0.810547" />
+                            <point x="0.0078125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Asset\Jungle-GUI-PNG\PNG\fruits\Pisang.png">
+                        <collision-poly>
+                            <point x="0.333333" y="0.347656" />
+                            <point x="0.5" y="0.365234" />
+                            <point x="0.792135" y="0.216797" />
+                            <point x="0.919476" y="0.5" />
+                            <point x="0.687266" y="0.673828" />
+                            <point x="0.5" y="0.792969" />
+                            <point x="0.219101" y="0.771484" />
+                            <point x="0.0280899" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Asset\Jungle-GUI-PNG\PNG\fruits\Semangka.png">
+                        <collision-poly>
+                            <point x="0.107422" y="0.107422" />
+                            <point x="0.5" y="0.330078" />
+                            <point x="0.746094" y="0.5" />
+                            <point x="0.830078" y="0.830078" />
+                            <point x="0.5" y="0.902344" />
+                            <point x="0.207031" y="0.792969" />
+                            <point x="0.0332031" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Asset\Jungle-GUI-PNG\PNG\fruits\Stroberi.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.25" />
+                            <point x="0.5" y="0.101563" />
+                            <point x="0.853516" y="0.146484" />
+                            <point x="0.876953" y="0.5" />
+                            <point x="0.787109" y="0.787109" />
+                            <point x="0.5" y="0.957031" />
+                            <point x="0.164063" y="0.835938" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WebStorage" sid="128030383125708">
+            <plugin id="WebStorage" />
+        </object-type>
+        <object-type name="Function" sid="147316810862366">
+            <plugin id="Function" />
+        </object-type>
+        <object-type global="1" name="DataBuah" sid="868272426988506">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="table_" sid="608000174565897">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="873471856502320" speed="5">
+                    <frame duration="1" hotspotX="0.50137" hotspotY="0.506667" original-source="E:\Asset\Jungle-GUI-PNG\PNG\match3\table_2.png">
+                        <collision-poly>
+                            <point x="0.0219178" y="0.106667" />
+                            <point x="0.49863" y="0" />
+                            <point x="0.978082" y="0.106667" />
+                            <point x="1" y="0.493333" />
+                            <point x="0.978082" y="0.893333" />
+                            <point x="0.49863" y="1" />
+                            <point x="0.0219178" y="0.893333" />
+                            <point x="0" y="0.493333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="popuplose" sid="566384887795195">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="808471385506876" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501144" original-source="E:\Asset\Jungle-GUI-PNG\popup-lose.png">
+                        <collision-poly>
+                            <point x="0.0201342" y="0.02746" />
+                            <point x="0.5" y="0" />
+                            <point x="0.966443" y="0.0457666" />
+                            <point x="0.983221" y="0.498856" />
+                            <point x="0.966443" y="0.954233" />
+                            <point x="0.5" y="0.979405" />
+                            <point x="0.033557" y="0.954233" />
+                            <point x="0.00503356" y="0.498856" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501144" original-source="E:\Asset\Jungle-GUI-PNG\popup-win.png">
+                        <collision-poly>
+                            <point x="0.0201342" y="0.02746" />
+                            <point x="0.5" y="0" />
+                            <point x="0.966443" y="0.0457666" />
+                            <point x="0.983221" y="0.498856" />
+                            <point x="0.966443" y="0.954233" />
+                            <point x="0.5" y="0.979405" />
+                            <point x="0.033557" y="0.954233" />
+                            <point x="0.00503356" y="0.498856" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="dataAcak" sid="841963909685808">
+            <plugin id="Arr" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1351,6 +1490,7 @@
         <event-sheet>E_Tampilan Awal.xml</event-sheet>
         <event-sheet>E_Trivia.xml</event-sheet>
         <event-sheet>E_Quis1.xml</event-sheet>
+        <event-sheet>GlobalEvent.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="6">
@@ -1358,6 +1498,8 @@
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
+        <global-instance type="WebStorage" uid="83" />
+        <global-instance type="Function" uid="84" />
     </global-instances>
     <sounds-folder />
     <music-folder />

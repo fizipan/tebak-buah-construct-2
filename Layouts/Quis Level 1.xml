@@ -131,6 +131,28 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+                <instance type="table_" uid="87">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>927</x>
+                        <y>301</y>
+                        <z>0</z>
+                        <width>365</width>
+                        <height>75</height>
+                        <depth>0</depth>
+                        <hotspotX>0.501369834</hotspotX>
+                        <hotspotY>0.50666666</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="TableBuah" uid="55">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -417,7 +439,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="btn_alpukat" uid="68">
+                <instance type="Alpukat2" uid="82">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -427,63 +449,49 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>878</x>
-                        <y>-310</y>
+                        <x>426</x>
+                        <y>415</y>
                         <z>0</z>
-                        <width>327</width>
-                        <height>67</height>
+                        <width>175</width>
+                        <height>175</height>
                         <depth>0</depth>
-                        <hotspotX>0.501529038</hotspotX>
-                        <hotspotY>0.50746268</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="btn_anggur" uid="69">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>885</x>
-                        <y>-140</y>
-                        <z>0</z>
-                        <width>327</width>
-                        <height>68</height>
-                        <depth>0</depth>
-                        <hotspotX>0.501529038</hotspotX>
+                        <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="btn_apel" uid="70">
+                <instance type="Text" uid="86">
                     <properties>
+                        <text>Apel</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
+                        <font>Leelawadee UI,-37,700,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-right</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
+                    <instance-variables>
+                        <id>1</id>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1286</x>
-                        <y>-313</y>
+                        <x>1089</x>
+                        <y>275</y>
                         <z>0</z>
-                        <width>327</width>
-                        <height>67</height>
+                        <width>322</width>
+                        <height>49</height>
                         <depth>0</depth>
-                        <hotspotX>0.501529038</hotspotX>
-                        <hotspotY>0.50746268</hotspotY>
+                        <hotspotX>1</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="btn_kiwi" uid="71">
+                <instance type="table_" uid="88">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -493,41 +501,49 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1276</x>
-                        <y>-151</y>
+                        <x>928</x>
+                        <y>394</y>
                         <z>0</z>
-                        <width>327</width>
-                        <height>67</height>
+                        <width>365</width>
+                        <height>75</height>
                         <depth>0</depth>
-                        <hotspotX>0.501529038</hotspotX>
-                        <hotspotY>0.50746268</hotspotY>
+                        <hotspotX>0.501369834</hotspotX>
+                        <hotspotY>0.50666666</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="btn_lemon" uid="72">
+                <instance type="Text" uid="89">
                     <properties>
+                        <text>Apel</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
+                        <font>Leelawadee UI,-37,700,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-right</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
+                    <instance-variables>
+                        <id>2</id>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1649</x>
-                        <y>-312</y>
+                        <x>1090</x>
+                        <y>368</y>
                         <z>0</z>
-                        <width>327</width>
-                        <height>67</height>
+                        <width>322</width>
+                        <height>49</height>
                         <depth>0</depth>
-                        <hotspotX>0.501529038</hotspotX>
-                        <hotspotY>0.50746268</hotspotY>
+                        <hotspotX>1</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="btn_manggis" uid="73">
+                <instance type="table_" uid="90">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -537,41 +553,49 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1668</x>
-                        <y>-149</y>
+                        <x>932</x>
+                        <y>492</y>
                         <z>0</z>
-                        <width>327</width>
-                        <height>67</height>
+                        <width>365</width>
+                        <height>75</height>
                         <depth>0</depth>
-                        <hotspotX>0.501529038</hotspotX>
-                        <hotspotY>0.50746268</hotspotY>
+                        <hotspotX>0.501369834</hotspotX>
+                        <hotspotY>0.50666666</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="btn_persik" uid="74">
+                <instance type="Text" uid="91">
                     <properties>
+                        <text>Apel</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
+                        <font>Leelawadee UI,-37,700,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-right</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
+                    <instance-variables>
+                        <id>3</id>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1498</x>
-                        <y>39</y>
+                        <x>1094</x>
+                        <y>466</y>
                         <z>0</z>
-                        <width>327</width>
-                        <height>67</height>
+                        <width>322</width>
+                        <height>49</height>
                         <depth>0</depth>
-                        <hotspotX>0.501529038</hotspotX>
-                        <hotspotY>0.50746268</hotspotY>
+                        <hotspotX>1</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="btn_pisang" uid="75">
+                <instance type="popuplose" uid="77">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -581,52 +605,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1513</x>
-                        <y>181</y>
-                        <z>0</z>
-                        <width>327</width>
-                        <height>68</height>
-                        <depth>0</depth>
-                        <hotspotX>0.501529038</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="btn_semangka" uid="76">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1510</x>
-                        <y>310</y>
-                        <z>0</z>
-                        <width>327</width>
-                        <height>67</height>
-                        <depth>0</depth>
-                        <hotspotX>0.501529038</hotspotX>
-                        <hotspotY>0.50746268</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="popupL" uid="77">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>246</x>
-                        <y>982</y>
+                        <x>1599</x>
+                        <y>341</y>
                         <z>0</z>
                         <width>596</width>
                         <height>437</height>
@@ -637,68 +617,32 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="popupwin" uid="78">
+                <instance type="Text" uid="69">
                     <properties>
+                        <text>1/10</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
+                        <font>Leelawadee UI,-37,700,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-right</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
+                    <instance-variables>
+                        <id>999</id>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>918</x>
-                        <y>990</y>
+                        <x>590</x>
+                        <y>548</y>
                         <z>0</z>
-                        <width>596</width>
-                        <height>437</height>
+                        <width>322</width>
+                        <height>49</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.501144171</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="btn_coba2" uid="79">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>238</x>
-                        <y>1129</y>
-                        <z>0</z>
-                        <width>327</width>
-                        <height>67</height>
-                        <depth>0</depth>
-                        <hotspotX>0.501529038</hotspotX>
-                        <hotspotY>0.50746268</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="btn_lanjut2" uid="80">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>918</x>
-                        <y>1131</y>
-                        <z>0</z>
-                        <width>327</width>
-                        <height>67</height>
-                        <depth>0</depth>
-                        <hotspotX>0.501529038</hotspotX>
-                        <hotspotY>0.50746268</hotspotY>
+                        <hotspotX>1</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -707,6 +651,21 @@
             <effects />
         </layer>
     </layers>
-    <nonworld-instances />
+    <nonworld-instances>
+        <instance type="DataBuah" uid="85">
+            <properties>
+                <width>10</width>
+                <height>1</height>
+                <depth>1</depth>
+            </properties>
+        </instance>
+        <instance type="dataAcak" uid="68">
+            <properties>
+                <width>10</width>
+                <height>1</height>
+                <depth>1</depth>
+            </properties>
+        </instance>
+    </nonworld-instances>
     <effects />
 </c2layout>
