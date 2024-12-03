@@ -857,28 +857,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="T_Stoberi" uid="42">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1413</x>
-                        <y>323</y>
-                        <z>0</z>
-                        <width>445</width>
-                        <height>151</height>
-                        <depth>0</depth>
-                        <hotspotX>0.501123607</hotspotX>
-                        <hotspotY>0.503311276</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="T_T_Anggur" uid="43">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -1073,6 +1051,28 @@
                         <depth>0</depth>
                         <hotspotX>0.501123607</hotspotX>
                         <hotspotY>0.503311276</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Alpukat2" uid="81">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-132</x>
+                        <y>399</y>
+                        <z>0</z>
+                        <width>512</width>
+                        <height>512</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

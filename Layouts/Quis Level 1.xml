@@ -131,6 +131,28 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+                <instance type="table_" uid="87">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>927</x>
+                        <y>301</y>
+                        <z>0</z>
+                        <width>365</width>
+                        <height>75</height>
+                        <depth>0</depth>
+                        <hotspotX>0.501369834</hotspotX>
+                        <hotspotY>0.50666666</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="TableBuah" uid="55">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -417,7 +439,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="btn_alpukat" uid="68">
+                <instance type="Alpukat2" uid="82">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -427,41 +449,19 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>878</x>
-                        <y>-310</y>
+                        <x>424</x>
+                        <y>426</y>
                         <z>0</z>
-                        <width>327</width>
-                        <height>67</height>
+                        <width>199.997497559</width>
+                        <height>199.997497559</height>
                         <depth>0</depth>
-                        <hotspotX>0.501529038</hotspotX>
-                        <hotspotY>0.50746268</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="btn_anggur" uid="69">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>885</x>
-                        <y>-140</y>
-                        <z>0</z>
-                        <width>327</width>
-                        <height>68</height>
-                        <depth>0</depth>
-                        <hotspotX>0.501529038</hotspotX>
+                        <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="btn_apel" uid="70">
+                <instance type="table_" uid="88">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -471,19 +471,19 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1286</x>
-                        <y>-313</y>
+                        <x>928</x>
+                        <y>394</y>
                         <z>0</z>
-                        <width>327</width>
-                        <height>67</height>
+                        <width>365</width>
+                        <height>75</height>
                         <depth>0</depth>
-                        <hotspotX>0.501529038</hotspotX>
-                        <hotspotY>0.50746268</hotspotY>
+                        <hotspotX>0.501369834</hotspotX>
+                        <hotspotY>0.50666666</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="btn_kiwi" uid="71">
+                <instance type="table_" uid="90">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -493,19 +493,19 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1276</x>
-                        <y>-151</y>
+                        <x>932</x>
+                        <y>492</y>
                         <z>0</z>
-                        <width>327</width>
-                        <height>67</height>
+                        <width>365</width>
+                        <height>75</height>
                         <depth>0</depth>
-                        <hotspotX>0.501529038</hotspotX>
-                        <hotspotY>0.50746268</hotspotY>
+                        <hotspotX>0.501369834</hotspotX>
+                        <hotspotY>0.50666666</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="btn_lemon" uid="72">
+                <instance type="popuplose" uid="77">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -515,118 +515,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1649</x>
-                        <y>-312</y>
-                        <z>0</z>
-                        <width>327</width>
-                        <height>67</height>
-                        <depth>0</depth>
-                        <hotspotX>0.501529038</hotspotX>
-                        <hotspotY>0.50746268</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="btn_manggis" uid="73">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1668</x>
-                        <y>-149</y>
-                        <z>0</z>
-                        <width>327</width>
-                        <height>67</height>
-                        <depth>0</depth>
-                        <hotspotX>0.501529038</hotspotX>
-                        <hotspotY>0.50746268</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="btn_persik" uid="74">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1498</x>
-                        <y>39</y>
-                        <z>0</z>
-                        <width>327</width>
-                        <height>67</height>
-                        <depth>0</depth>
-                        <hotspotX>0.501529038</hotspotX>
-                        <hotspotY>0.50746268</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="btn_pisang" uid="75">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1513</x>
-                        <y>181</y>
-                        <z>0</z>
-                        <width>327</width>
-                        <height>68</height>
-                        <depth>0</depth>
-                        <hotspotX>0.501529038</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="btn_semangka" uid="76">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1510</x>
-                        <y>310</y>
-                        <z>0</z>
-                        <width>327</width>
-                        <height>67</height>
-                        <depth>0</depth>
-                        <hotspotX>0.501529038</hotspotX>
-                        <hotspotY>0.50746268</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="popupL" uid="77">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>246</x>
-                        <y>982</y>
+                        <x>1599</x>
+                        <y>341</y>
                         <z>0</z>
                         <width>596</width>
                         <height>437</height>
@@ -637,68 +527,142 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="popupwin" uid="78">
+                <instance type="SpriteFont" uid="42">
                     <properties>
+                        <character-width>40</character-width>
+                        <character-height>55</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>Text</text>
+                        <scale>1</scale>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,32,1],&quot;&quot;data&quot;&quot;:[[[13],[14],[15],[16],[17],[18],[19],[21],[22],[23],[24],[25],[26],[27],[28],[30],[31],[32],[33],[34],[35],[36],[37],[38],[39],[43],[44],[51],[52],[53],[54],[57]],[[&quot;&quot; &quot;&quot;],[&quot;&quot;|&quot;&quot;],[&quot;&quot;&apos;&quot;&quot;],[&quot;&quot;i&quot;&quot;],[&quot;&quot;Il&quot;&quot;],[&quot;&quot;,&quot;&quot;],[&quot;&quot;.;:`°&quot;&quot;],[&quot;&quot;!&quot;&quot;],[&quot;&quot;1&quot;&quot;],[&quot;&quot;Jjt&quot;&quot;],[&quot;&quot;cs&gt;&quot;&quot;],[&quot;&quot;-()&lt;&quot;&quot;],[&quot;&quot;fr&quot;&quot;],[&quot;&quot;LS?\&quot;&quot;[]&quot;&quot;],[&quot;&quot;C+=&quot;&quot;],[&quot;&quot;Zz\\/&quot;&quot;],[&quot;&quot;FT2&quot;&quot;],[&quot;&quot;E£&quot;&quot;],[&quot;&quot;37€&quot;&quot;],[&quot;&quot;abdghnopquvxy5_&quot;&quot;],[&quot;&quot;NPUek*&quot;&quot;],[&quot;&quot;R$&quot;&quot;],[&quot;&quot;ABDGOVXY04%&quot;&quot;],[&quot;&quot;HQ689&quot;&quot;],[&quot;&quot;K&quot;&quot;],[&quot;&quot;&amp;&quot;&quot;],[&quot;&quot;~&quot;&quot;],[&quot;&quot;w#&quot;&quot;],[&quot;&quot;m&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;M&quot;&quot;],[&quot;&quot;W&quot;&quot;]]]}</char-width-json>
+                        <space-char-width>-1</space-char-width>
                     </properties>
+                    <instance-variables>
+                        <id>1</id>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>918</x>
-                        <y>990</y>
+                        <x>931</x>
+                        <y>301</y>
                         <z>0</z>
-                        <width>596</width>
-                        <height>437</height>
+                        <width>322</width>
+                        <height>57</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.501144171</hotspotY>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="btn_coba2" uid="79">
+                <instance type="SpriteFont" uid="70">
                     <properties>
+                        <character-width>40</character-width>
+                        <character-height>55</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>Text</text>
+                        <scale>1</scale>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,32,1],&quot;&quot;data&quot;&quot;:[[[13],[14],[15],[16],[17],[18],[19],[21],[22],[23],[24],[25],[26],[27],[28],[30],[31],[32],[33],[34],[35],[36],[37],[38],[39],[43],[44],[51],[52],[53],[54],[57]],[[&quot;&quot; &quot;&quot;],[&quot;&quot;|&quot;&quot;],[&quot;&quot;&apos;&quot;&quot;],[&quot;&quot;i&quot;&quot;],[&quot;&quot;Il&quot;&quot;],[&quot;&quot;,&quot;&quot;],[&quot;&quot;.;:`°&quot;&quot;],[&quot;&quot;!&quot;&quot;],[&quot;&quot;1&quot;&quot;],[&quot;&quot;Jjt&quot;&quot;],[&quot;&quot;cs&gt;&quot;&quot;],[&quot;&quot;-()&lt;&quot;&quot;],[&quot;&quot;fr&quot;&quot;],[&quot;&quot;LS?\&quot;&quot;[]&quot;&quot;],[&quot;&quot;C+=&quot;&quot;],[&quot;&quot;Zz\\/&quot;&quot;],[&quot;&quot;FT2&quot;&quot;],[&quot;&quot;E£&quot;&quot;],[&quot;&quot;37€&quot;&quot;],[&quot;&quot;abdghnopquvxy5_&quot;&quot;],[&quot;&quot;NPUek*&quot;&quot;],[&quot;&quot;R$&quot;&quot;],[&quot;&quot;ABDGOVXY04%&quot;&quot;],[&quot;&quot;HQ689&quot;&quot;],[&quot;&quot;K&quot;&quot;],[&quot;&quot;&amp;&quot;&quot;],[&quot;&quot;~&quot;&quot;],[&quot;&quot;w#&quot;&quot;],[&quot;&quot;m&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;M&quot;&quot;],[&quot;&quot;W&quot;&quot;]]]}</char-width-json>
+                        <space-char-width>-1</space-char-width>
                     </properties>
+                    <instance-variables>
+                        <id>2</id>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>238</x>
-                        <y>1129</y>
+                        <x>931</x>
+                        <y>395</y>
                         <z>0</z>
-                        <width>327</width>
-                        <height>67</height>
+                        <width>336</width>
+                        <height>57</height>
                         <depth>0</depth>
-                        <hotspotX>0.501529038</hotspotX>
-                        <hotspotY>0.50746268</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="btn_lanjut2" uid="80">
+                <instance type="SpriteFont" uid="71">
                     <properties>
+                        <character-width>40</character-width>
+                        <character-height>55</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>Text</text>
+                        <scale>1</scale>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,32,1],&quot;&quot;data&quot;&quot;:[[[13],[14],[15],[16],[17],[18],[19],[21],[22],[23],[24],[25],[26],[27],[28],[30],[31],[32],[33],[34],[35],[36],[37],[38],[39],[43],[44],[51],[52],[53],[54],[57]],[[&quot;&quot; &quot;&quot;],[&quot;&quot;|&quot;&quot;],[&quot;&quot;&apos;&quot;&quot;],[&quot;&quot;i&quot;&quot;],[&quot;&quot;Il&quot;&quot;],[&quot;&quot;,&quot;&quot;],[&quot;&quot;.;:`°&quot;&quot;],[&quot;&quot;!&quot;&quot;],[&quot;&quot;1&quot;&quot;],[&quot;&quot;Jjt&quot;&quot;],[&quot;&quot;cs&gt;&quot;&quot;],[&quot;&quot;-()&lt;&quot;&quot;],[&quot;&quot;fr&quot;&quot;],[&quot;&quot;LS?\&quot;&quot;[]&quot;&quot;],[&quot;&quot;C+=&quot;&quot;],[&quot;&quot;Zz\\/&quot;&quot;],[&quot;&quot;FT2&quot;&quot;],[&quot;&quot;E£&quot;&quot;],[&quot;&quot;37€&quot;&quot;],[&quot;&quot;abdghnopquvxy5_&quot;&quot;],[&quot;&quot;NPUek*&quot;&quot;],[&quot;&quot;R$&quot;&quot;],[&quot;&quot;ABDGOVXY04%&quot;&quot;],[&quot;&quot;HQ689&quot;&quot;],[&quot;&quot;K&quot;&quot;],[&quot;&quot;&amp;&quot;&quot;],[&quot;&quot;~&quot;&quot;],[&quot;&quot;w#&quot;&quot;],[&quot;&quot;m&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;M&quot;&quot;],[&quot;&quot;W&quot;&quot;]]]}</char-width-json>
+                        <space-char-width>-1</space-char-width>
                     </properties>
+                    <instance-variables>
+                        <id>3</id>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>918</x>
-                        <y>1131</y>
+                        <x>935.5</x>
+                        <y>492</y>
                         <z>0</z>
-                        <width>327</width>
-                        <height>67</height>
+                        <width>329</width>
+                        <height>57</height>
                         <depth>0</depth>
-                        <hotspotX>0.501529038</hotspotX>
-                        <hotspotY>0.50746268</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SpriteFont" uid="72">
+                    <properties>
+                        <character-width>40</character-width>
+                        <character-height>55</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>0/10</text>
+                        <scale>1</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>-10</character-spacing>
+                        <line-height>0</line-height>
+                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,32,1],&quot;&quot;data&quot;&quot;:[[[13],[14],[15],[16],[17],[18],[19],[21],[22],[23],[24],[25],[26],[27],[28],[30],[31],[32],[33],[34],[35],[36],[37],[38],[39],[43],[44],[51],[52],[53],[54],[57]],[[&quot;&quot; &quot;&quot;],[&quot;&quot;|&quot;&quot;],[&quot;&quot;&apos;&quot;&quot;],[&quot;&quot;i&quot;&quot;],[&quot;&quot;Il&quot;&quot;],[&quot;&quot;,&quot;&quot;],[&quot;&quot;.;:`°&quot;&quot;],[&quot;&quot;!&quot;&quot;],[&quot;&quot;1&quot;&quot;],[&quot;&quot;Jjt&quot;&quot;],[&quot;&quot;cs&gt;&quot;&quot;],[&quot;&quot;-()&lt;&quot;&quot;],[&quot;&quot;fr&quot;&quot;],[&quot;&quot;LS?\&quot;&quot;[]&quot;&quot;],[&quot;&quot;C+=&quot;&quot;],[&quot;&quot;Zz\\/&quot;&quot;],[&quot;&quot;FT2&quot;&quot;],[&quot;&quot;E£&quot;&quot;],[&quot;&quot;37€&quot;&quot;],[&quot;&quot;abdghnopquvxy5_&quot;&quot;],[&quot;&quot;NPUek*&quot;&quot;],[&quot;&quot;R$&quot;&quot;],[&quot;&quot;ABDGOVXY04%&quot;&quot;],[&quot;&quot;HQ689&quot;&quot;],[&quot;&quot;K&quot;&quot;],[&quot;&quot;&amp;&quot;&quot;],[&quot;&quot;~&quot;&quot;],[&quot;&quot;w#&quot;&quot;],[&quot;&quot;m&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;M&quot;&quot;],[&quot;&quot;W&quot;&quot;]]]}</char-width-json>
+                        <space-char-width>-1</space-char-width>
+                    </properties>
+                    <instance-variables>
+                        <id>999</id>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>427</x>
+                        <y>265</y>
+                        <z>0</z>
+                        <width>312</width>
+                        <height>57</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -707,6 +671,21 @@
             <effects />
         </layer>
     </layers>
-    <nonworld-instances />
+    <nonworld-instances>
+        <instance type="DataBuah" uid="85">
+            <properties>
+                <width>10</width>
+                <height>1</height>
+                <depth>1</depth>
+            </properties>
+        </instance>
+        <instance type="dataAcak" uid="68">
+            <properties>
+                <width>10</width>
+                <height>1</height>
+                <depth>1</depth>
+            </properties>
+        </instance>
+    </nonworld-instances>
     <effects />
 </c2layout>

@@ -2,5 +2,396 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>E_Quis1</name>
-    <events />
+    <events>
+        <variable constant="0" name="dataSoal" sid="182080627749559" static="0" type="number">0</variable>
+        <variable constant="0" name="gameMulai" sid="970666172413315" static="0" type="number">1</variable>
+        <variable constant="0" name="pilihan" sid="834262556217796" static="0" type="number">0</variable>
+        <variable constant="0" name="jawabanSoal" sid="907569277802708" static="0" type="number">0</variable>
+        <variable constant="0" name="IdGame" sid="322657239402254" static="0" type="number">0</variable>
+        <event-block sid="132824706437710">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="859175623214264" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="609459979955520" type="Function">
+                    <param id="0" name="Name">&quot;setDataBuah&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="966602169694566" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="0" name="Call function" sid="521594839839678" type="Function">
+                    <param id="0" name="Name">&quot;setDataSoal&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="539924315640940" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="0" name="Call function" sid="156253869456442" type="Function">
+                    <param id="0" name="Name">&quot;setSoal&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="370228222649381">
+            <conditions>
+                <condition id="0" name="On function" sid="828275582413567" type="Function">
+                    <param id="0" name="Name">&quot;setDataBuah&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Set at X" sid="691348735894385" type="DataBuah">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Value">&quot;Alpukat&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="788212766093610" type="DataBuah">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Value">&quot;Anggur&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="315425415668046" type="DataBuah">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Value">&quot;Apel&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="411045518279993" type="DataBuah">
+                    <param id="0" name="X">3</param>
+                    <param id="1" name="Value">&quot;Kiwi&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="581337469869923" type="DataBuah">
+                    <param id="0" name="X">4</param>
+                    <param id="1" name="Value">&quot;Lemon&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="662356249529233" type="DataBuah">
+                    <param id="0" name="X">5</param>
+                    <param id="1" name="Value">&quot;Manggis&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="362840747867478" type="DataBuah">
+                    <param id="0" name="X">6</param>
+                    <param id="1" name="Value">&quot;Persik&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="583897820726591" type="DataBuah">
+                    <param id="0" name="X">7</param>
+                    <param id="1" name="Value">&quot;Pisang&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="759936688125016" type="DataBuah">
+                    <param id="0" name="X">8</param>
+                    <param id="1" name="Value">&quot;Semangka&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="897979353788928" type="DataBuah">
+                    <param id="0" name="X">9</param>
+                    <param id="1" name="Value">&quot;Stroberi&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="847111856780047">
+            <conditions>
+                <condition id="0" name="On function" sid="657792491422585" type="Function">
+                    <param id="0" name="Name">&quot;setDataSoal&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Clear" sid="204137059124675" type="dataAcak" />
+                <action id="1" name="Set size" sid="885530802332655" type="dataAcak">
+                    <param id="0" name="Width">3</param>
+                    <param id="1" name="Height">1</param>
+                    <param id="2" name="Depth">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <variable constant="0" name="rand" sid="943258622558183" static="0" type="number">0</variable>
+                <event-block sid="395466721646716">
+                    <conditions>
+                        <condition id="-10" name="For" sid="735644035432811" type="System">
+                            <param id="0" name="Name">&quot;randomSoal&quot;</param>
+                            <param id="1" name="Start index">0</param>
+                            <param id="2" name="End index">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="399763221376868" type="System">
+                            <param id="0" name="Variable">rand</param>
+                            <param id="1" name="Value">int(random(1,DataBuah.Width+1))</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="673235868588181">
+                            <conditions>
+                                <condition id="-23" name="While" sid="200993164209180" type="System" />
+                                <condition id="5" name="Contains value" sid="563868331566695" type="dataAcak">
+                                    <param id="0" name="Value">rand</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="319954982907495" type="System">
+                                    <param id="0" name="Variable">rand</param>
+                                    <param id="1" name="Value">int(random(1,DataBuah.Width+1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="281063755259722">
+                            <conditions />
+                            <actions>
+                                <action id="2" name="Set at X" sid="423135046719911" type="dataAcak">
+                                    <param id="0" name="X">loopindex(&quot;randomSoal&quot;)</param>
+                                    <param id="1" name="Value">rand</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="756587339449502">
+            <conditions>
+                <condition id="0" name="On function" sid="738816307474217" type="Function">
+                    <param id="0" name="Name">&quot;setSoal&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="972307719205395" type="System">
+                    <param id="0" name="Variable">jawabanSoal</param>
+                    <param id="1" name="Value">dataAcak.At(0) - 1</param>
+                </action>
+                <action id="-9" name="Set value" sid="485802544485607" type="System">
+                    <param id="0" name="Variable">pilihan</param>
+                    <param id="1" name="Value">choose(1,2,3)</param>
+                </action>
+                <action id="5" name="Set frame" sid="403133223462377" type="Alpukat2">
+                    <param id="0" name="Frame number">jawabanSoal</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="416842125001614">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="850101793026491" type="System">
+                            <param id="0" name="Variable">pilihan</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="627150856039445">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="253621099221332" type="SpriteFont">
+                                    <param id="0" name="Unique ID">42</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="465211073602785" type="SpriteFont">
+                                    <param id="0" name="Text">DataBuah.At(int(dataAcak.At(0)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="438217083298386">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="716724873600211" type="SpriteFont">
+                                    <param id="0" name="Unique ID">70</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="263010049450518" type="SpriteFont">
+                                    <param id="0" name="Text">DataBuah.At(int(dataAcak.At(1)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="760016942066336">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="678391099691176" type="SpriteFont">
+                                    <param id="0" name="Unique ID">71</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="764946324159169" type="SpriteFont">
+                                    <param id="0" name="Text">DataBuah.At(int(dataAcak.At(2)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="248297586804997">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="626256596483960" type="System">
+                            <param id="0" name="Variable">pilihan</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="746556501096211">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="421098111582458" type="SpriteFont">
+                                    <param id="0" name="Unique ID">42</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="115213886873756" type="SpriteFont">
+                                    <param id="0" name="Text">DataBuah.At(int(dataAcak.At(0)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="859700645054743">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="853882236393184" type="SpriteFont">
+                                    <param id="0" name="Unique ID">70</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="539048368585614" type="SpriteFont">
+                                    <param id="0" name="Text">DataBuah.At(int(dataAcak.At(2)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="538338330080040">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="385659501804489" type="SpriteFont">
+                                    <param id="0" name="Unique ID">71</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="221085661098155" type="SpriteFont">
+                                    <param id="0" name="Text">DataBuah.At(int(dataAcak.At(1)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="371097315185842">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="966158292892592" type="System">
+                            <param id="0" name="Variable">pilihan</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="573251354081321">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="729825154902949" type="SpriteFont">
+                                    <param id="0" name="Unique ID">42</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="890947986591942" type="SpriteFont">
+                                    <param id="0" name="Text">DataBuah.At(int(dataAcak.At(1)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="658427300241561">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="862583870930241" type="SpriteFont">
+                                    <param id="0" name="Unique ID">70</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="701600051255773" type="SpriteFont">
+                                    <param id="0" name="Text">DataBuah.At(int(dataAcak.At(2)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="371436076324264">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="157555639484557" type="SpriteFont">
+                                    <param id="0" name="Unique ID">71</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="735707252534108" type="SpriteFont">
+                                    <param id="0" name="Text">DataBuah.At(int(dataAcak.At(0)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="639680542422661">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="335868273979216" type="System">
+                    <param id="0" name="Variable">gameMulai</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="871316328932826">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="947772725251425" type="SpriteFont">
+                            <param id="0" name="Unique ID">72</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="252258004929562" type="SpriteFont">
+                            <param id="0" name="Text">dataSoal + 1 &amp; &quot;/10&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="454650045093601">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="341873422494231" type="Touch">
+                            <param id="0" name="Object">SpriteFont</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="283680403099164" type="SpriteFont">
+                            <param id="0" name="Instance variable">id</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">999</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="379209473071159">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="874633902520424" type="SpriteFont">
+                                    <param id="0" name="Instance variable">id</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">pilihan</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="234960639410438" type="Function">
+                                    <param id="0" name="Name">&quot;setDataSoal&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-16" name="Wait" sid="121095356767877" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="0" name="Call function" sid="683300348674298" type="Function">
+                                    <param id="0" name="Name">&quot;setSoal&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-9" name="Set value" sid="841990652346335" type="System">
+                                    <param id="0" name="Variable">dataSoal</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="656711827301804">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="268062875057989" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="413211883868843" type="Function">
+                                    <param id="0" name="Name">&quot;setDataSoal&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-16" name="Wait" sid="220253752741840" type="System">
+                                    <param id="0" name="Seconds">0.05</param>
+                                </action>
+                                <action id="0" name="Call function" sid="658842519654279" type="Function">
+                                    <param id="0" name="Name">&quot;setSoal&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-9" name="Set value" sid="888351875118525" type="System">
+                                    <param id="0" name="Variable">dataSoal</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
 </c2eventsheet>
