@@ -4,7 +4,7 @@
     <name>E_Quis1</name>
     <events>
         <variable constant="0" name="dataSoal" sid="182080627749559" static="0" type="number">0</variable>
-        <variable constant="0" name="gameMulai" sid="970666172413315" static="0" type="number">0</variable>
+        <variable constant="0" name="gameMulai" sid="970666172413315" static="0" type="number">1</variable>
         <variable constant="0" name="pilihan" sid="834262556217796" static="0" type="number">0</variable>
         <variable constant="0" name="jawabanSoal" sid="907569277802708" static="0" type="number">0</variable>
         <variable constant="0" name="IdGame" sid="322657239402254" static="0" type="number">0</variable>
@@ -115,6 +115,7 @@
                     <sub-events>
                         <event-block sid="673235868588181">
                             <conditions>
+                                <condition id="-23" name="While" sid="200993164209180" type="System" />
                                 <condition id="5" name="Contains value" sid="563868331566695" type="dataAcak">
                                     <param id="0" name="Value">rand</param>
                                 </condition>
@@ -171,36 +172,36 @@
                     <sub-events>
                         <event-block sid="627150856039445">
                             <conditions>
-                                <condition id="-14" name="Pick by unique ID" sid="253621099221332" type="Text">
-                                    <param id="0" name="Unique ID">86</param>
+                                <condition id="-14" name="Pick by unique ID" sid="253621099221332" type="SpriteFont">
+                                    <param id="0" name="Unique ID">42</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" sid="465211073602785" type="Text">
+                                <action id="0" name="Set text" sid="465211073602785" type="SpriteFont">
                                     <param id="0" name="Text">DataBuah.At(int(dataAcak.At(0)-1))</param>
                                 </action>
                             </actions>
                         </event-block>
                         <event-block sid="438217083298386">
                             <conditions>
-                                <condition id="-14" name="Pick by unique ID" sid="716724873600211" type="Text">
-                                    <param id="0" name="Unique ID">89</param>
+                                <condition id="-14" name="Pick by unique ID" sid="716724873600211" type="SpriteFont">
+                                    <param id="0" name="Unique ID">70</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" sid="263010049450518" type="Text">
+                                <action id="0" name="Set text" sid="263010049450518" type="SpriteFont">
                                     <param id="0" name="Text">DataBuah.At(int(dataAcak.At(1)-1))</param>
                                 </action>
                             </actions>
                         </event-block>
                         <event-block sid="760016942066336">
                             <conditions>
-                                <condition id="-14" name="Pick by unique ID" sid="678391099691176" type="Text">
-                                    <param id="0" name="Unique ID">91</param>
+                                <condition id="-14" name="Pick by unique ID" sid="678391099691176" type="SpriteFont">
+                                    <param id="0" name="Unique ID">71</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" sid="764946324159169" type="Text">
+                                <action id="0" name="Set text" sid="764946324159169" type="SpriteFont">
                                     <param id="0" name="Text">DataBuah.At(int(dataAcak.At(2)-1))</param>
                                 </action>
                             </actions>
@@ -209,7 +210,7 @@
                 </event-block>
                 <event-block sid="248297586804997">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="984493389324551" type="System">
+                        <condition id="-14" name="Compare variable" sid="626256596483960" type="System">
                             <param id="0" name="Variable">pilihan</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">2</param>
@@ -217,39 +218,39 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="839003469143987">
+                        <event-block sid="746556501096211">
                             <conditions>
-                                <condition id="-14" name="Pick by unique ID" sid="222585430850374" type="Text">
-                                    <param id="0" name="Unique ID">86</param>
+                                <condition id="-14" name="Pick by unique ID" sid="421098111582458" type="SpriteFont">
+                                    <param id="0" name="Unique ID">42</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" sid="587451462015223" type="Text">
-                                    <param id="0" name="Text">DataBuah.At(int(dataAcak.At(1)-1))</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="592968960751844">
-                            <conditions>
-                                <condition id="-14" name="Pick by unique ID" sid="584471524999902" type="Text">
-                                    <param id="0" name="Unique ID">89</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Set text" sid="666325454896335" type="Text">
+                                <action id="0" name="Set text" sid="115213886873756" type="SpriteFont">
                                     <param id="0" name="Text">DataBuah.At(int(dataAcak.At(0)-1))</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="354114997106981">
+                        <event-block sid="859700645054743">
                             <conditions>
-                                <condition id="-14" name="Pick by unique ID" sid="695983315481787" type="Text">
-                                    <param id="0" name="Unique ID">91</param>
+                                <condition id="-14" name="Pick by unique ID" sid="853882236393184" type="SpriteFont">
+                                    <param id="0" name="Unique ID">70</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" sid="874011428266446" type="Text">
+                                <action id="0" name="Set text" sid="539048368585614" type="SpriteFont">
                                     <param id="0" name="Text">DataBuah.At(int(dataAcak.At(2)-1))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="538338330080040">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="385659501804489" type="SpriteFont">
+                                    <param id="0" name="Unique ID">71</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="221085661098155" type="SpriteFont">
+                                    <param id="0" name="Text">DataBuah.At(int(dataAcak.At(1)-1))</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -257,7 +258,7 @@
                 </event-block>
                 <event-block sid="371097315185842">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="630394092867792" type="System">
+                        <condition id="-14" name="Compare variable" sid="966158292892592" type="System">
                             <param id="0" name="Variable">pilihan</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">3</param>
@@ -265,38 +266,38 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="689411437009848">
+                        <event-block sid="573251354081321">
                             <conditions>
-                                <condition id="-14" name="Pick by unique ID" sid="635067352174572" type="Text">
-                                    <param id="0" name="Unique ID">86</param>
+                                <condition id="-14" name="Pick by unique ID" sid="729825154902949" type="SpriteFont">
+                                    <param id="0" name="Unique ID">42</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" sid="671321162263096" type="Text">
+                                <action id="0" name="Set text" sid="890947986591942" type="SpriteFont">
                                     <param id="0" name="Text">DataBuah.At(int(dataAcak.At(1)-1))</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="739922114903794">
+                        <event-block sid="658427300241561">
                             <conditions>
-                                <condition id="-14" name="Pick by unique ID" sid="152006256377858" type="Text">
-                                    <param id="0" name="Unique ID">89</param>
+                                <condition id="-14" name="Pick by unique ID" sid="862583870930241" type="SpriteFont">
+                                    <param id="0" name="Unique ID">70</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" sid="193631139906373" type="Text">
+                                <action id="0" name="Set text" sid="701600051255773" type="SpriteFont">
                                     <param id="0" name="Text">DataBuah.At(int(dataAcak.At(2)-1))</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="757298237666120">
+                        <event-block sid="371436076324264">
                             <conditions>
-                                <condition id="-14" name="Pick by unique ID" sid="866532239105619" type="Text">
-                                    <param id="0" name="Unique ID">91</param>
+                                <condition id="-14" name="Pick by unique ID" sid="157555639484557" type="SpriteFont">
+                                    <param id="0" name="Unique ID">71</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" sid="550279813780192" type="Text">
+                                <action id="0" name="Set text" sid="735707252534108" type="SpriteFont">
                                     <param id="0" name="Text">DataBuah.At(int(dataAcak.At(0)-1))</param>
                                 </action>
                             </actions>
@@ -309,20 +310,20 @@
             <conditions>
                 <condition id="-14" name="Compare variable" sid="335868273979216" type="System">
                     <param id="0" name="Variable">gameMulai</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions />
             <sub-events>
                 <event-block sid="871316328932826">
                     <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="947772725251425" type="Text">
-                            <param id="0" name="Unique ID">69</param>
+                        <condition id="-14" name="Pick by unique ID" sid="947772725251425" type="SpriteFont">
+                            <param id="0" name="Unique ID">72</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="252258004929562" type="Text">
+                        <action id="0" name="Set text" sid="252258004929562" type="SpriteFont">
                             <param id="0" name="Text">dataSoal + 1 &amp; &quot;/10&quot;</param>
                         </action>
                     </actions>
@@ -330,9 +331,9 @@
                 <event-block sid="454650045093601">
                     <conditions>
                         <condition id="3" name="On touched object" sid="341873422494231" type="Touch">
-                            <param id="0" name="Object">Text</param>
+                            <param id="0" name="Object">SpriteFont</param>
                         </condition>
-                        <condition id="-7" name="Compare instance variable" sid="283680403099164" type="Text">
+                        <condition id="-7" name="Compare instance variable" sid="283680403099164" type="SpriteFont">
                             <param id="0" name="Instance variable">id</param>
                             <param id="1" name="Comparison">1</param>
                             <param id="2" name="Value">999</param>
@@ -342,7 +343,7 @@
                     <sub-events>
                         <event-block sid="379209473071159">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="874633902520424" type="Text">
+                                <condition id="-7" name="Compare instance variable" sid="874633902520424" type="SpriteFont">
                                     <param id="0" name="Instance variable">id</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">pilihan</param>

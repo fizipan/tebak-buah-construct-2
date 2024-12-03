@@ -13,6 +13,7 @@
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Chris Kent" id="SpriteFontPlus" version="1">SpriteFont+</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
@@ -1478,6 +1479,32 @@
         </object-type>
         <object-type global="1" name="dataAcak" sid="841963909685808">
             <plugin id="Arr" />
+        </object-type>
+        <object-type name="SpriteFont" sid="251029111823562">
+            <plugin id="SpriteFontPlus" />
+            <instance-variables>
+                <instance-variable name="id" sid="640829361521447" type="number" />
+            </instance-variables>
+            <texture original-source="C:\Users\Chairul Aditya\Downloads\sprite\SpriteFont_Jaro_Regular_(48)_[1,1,1,1]_40x55.png" />
+        </object-type>
+        <object-type name="headerclean" sid="994661085656046">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="431951370505826" speed="5">
+                    <frame duration="1" hotspotX="0.500499" hotspotY="0.5" original-source="E:\Asset\Jungle-GUI-PNG\PNG\pause\header-clean.png">
+                        <collision-poly>
+                            <point x="0.110668" y="0.280303" />
+                            <point x="0.499501" y="0.0808081" />
+                            <point x="0.926221" y="0.186869" />
+                            <point x="0.906281" y="0.5" />
+                            <point x="0.907278" y="0.765152" />
+                            <point x="0.499501" y="0.787879" />
+                            <point x="0.114656" y="0.709596" />
+                            <point x="0.0757727" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
