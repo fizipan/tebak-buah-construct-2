@@ -158,6 +158,12 @@
                 <action id="5" name="Set frame" sid="403133223462377" type="Alpukat2">
                     <param id="0" name="Frame number">jawabanSoal</param>
                 </action>
+                <action id="-16" name="Set opacity" sid="424175042203184" type="table_">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="672425852621300" type="SpriteFont">
+                    <param id="0" name="Opacity">100</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="416842125001614">
@@ -338,6 +344,10 @@
                             <param id="1" name="Comparison">1</param>
                             <param id="2" name="Value">999</param>
                         </condition>
+                        <condition id="-10" name="Compare opacity" sid="338727505945843" type="SpriteFont">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Opacity">100</param>
+                        </condition>
                     </conditions>
                     <actions />
                     <sub-events>
@@ -350,6 +360,10 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="-10" name="Add to" sid="468829397403394" type="System">
+                                    <param id="0" name="Variable">dataSoal</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
                                 <action id="0" name="Call function" sid="234960639410438" type="Function">
                                     <param id="0" name="Name">&quot;setDataSoal&quot;</param>
                                     <param id="1" name="Parameter {n}"></param>
@@ -361,10 +375,6 @@
                                     <param id="0" name="Name">&quot;setSoal&quot;</param>
                                     <param id="1" name="Parameter {n}"></param>
                                 </action>
-                                <action id="-9" name="Set value" sid="841990652346335" type="System">
-                                    <param id="0" name="Variable">dataSoal</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="656711827301804">
@@ -372,26 +382,32 @@
                                 <condition id="-22" name="Else" sid="268062875057989" type="System" />
                             </conditions>
                             <actions>
-                                <action id="0" name="Call function" sid="413211883868843" type="Function">
-                                    <param id="0" name="Name">&quot;setDataSoal&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
-                                </action>
-                                <action id="-16" name="Wait" sid="220253752741840" type="System">
-                                    <param id="0" name="Seconds">0.05</param>
-                                </action>
-                                <action id="0" name="Call function" sid="658842519654279" type="Function">
-                                    <param id="0" name="Name">&quot;setSoal&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
-                                </action>
-                                <action id="-9" name="Set value" sid="888351875118525" type="System">
+                                <action id="-10" name="Add to" sid="215124903534889" type="System">
                                     <param id="0" name="Variable">dataSoal</param>
                                     <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="962924232768085" type="SpriteFont">
+                                    <param id="0" name="Opacity">50</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="454393067290049">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="118932035625097" type="table_">
+                    <param id="0" name="Instance variable">id</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">SpriteFont.UID</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="736068860165483" type="table_">
+                    <param id="0" name="Opacity">50</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
