@@ -1429,6 +1429,9 @@
         </object-type>
         <object-type name="table_" sid="608000174565897">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="id" sid="108587336043277" type="number" />
+            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="873471856502320" speed="5">
                     <frame duration="1" hotspotX="0.50137" hotspotY="0.506667" original-source="E:\Asset\Jungle-GUI-PNG\PNG\match3\table_2.png">
