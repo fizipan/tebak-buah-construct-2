@@ -358,7 +358,11 @@
                 <action id="-16" name="Wait" sid="995646588551571" type="System">
                     <param id="0" name="Seconds">0.5</param>
                 </action>
-                <action id="-25" name="Go to layout (by name)" sid="674943111736878" type="System">
+                <action id="-9" name="Set value" sid="241465673491441" type="System">
+                    <param id="0" name="Variable">gameMulai</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-25" name="Go to layout (by name)" sid="286773968668531" type="System">
                     <param id="0" name="Layout">&quot;Tampilan Awal&quot;</param>
                 </action>
             </actions>
