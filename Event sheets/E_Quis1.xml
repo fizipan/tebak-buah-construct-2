@@ -13,6 +13,14 @@
                 <condition id="-2" name="On start of layout" sid="859175623214264" type="System" />
             </conditions>
             <actions>
+                <action id="-4" name="Set layer visible" sid="159418153259858" type="System">
+                    <param id="0" name="Layer">&quot;NotifSalah&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="671119879063360" type="System">
+                    <param id="0" name="Layer">&quot;MenuAkhir&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
                 <action id="0" name="Call function" sid="609459979955520" type="Function">
                     <param id="0" name="Name">&quot;setDataBuah&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
@@ -40,6 +48,12 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="0" name="Clear" sid="835703592017156" type="DataBuah" />
+                <action id="1" name="Set size" sid="217097340914206" type="DataBuah">
+                    <param id="0" name="Width">10</param>
+                    <param id="1" name="Height">1</param>
+                    <param id="2" name="Depth">1</param>
+                </action>
                 <action id="2" name="Set at X" sid="691348735894385" type="DataBuah">
                     <param id="0" name="X">0</param>
                     <param id="1" name="Value">&quot;Alpukat&quot;</param>
@@ -103,7 +117,7 @@
                         <condition id="-10" name="For" sid="735644035432811" type="System">
                             <param id="0" name="Name">&quot;randomSoal&quot;</param>
                             <param id="1" name="Start index">0</param>
-                            <param id="2" name="End index">3</param>
+                            <param id="2" name="End index">2</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -232,7 +246,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="115213886873756" type="SpriteFont">
-                                    <param id="0" name="Text">DataBuah.At(int(dataAcak.At(0)-1))</param>
+                                    <param id="0" name="Text">DataBuah.At(int(dataAcak.At(1)-1))</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -243,8 +257,8 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" sid="539048368585614" type="SpriteFont">
-                                    <param id="0" name="Text">DataBuah.At(int(dataAcak.At(2)-1))</param>
+                                <action id="0" name="Set text" sid="221085661098155" type="SpriteFont">
+                                    <param id="0" name="Text">DataBuah.At(int(dataAcak.At(0)-1))</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -255,8 +269,8 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" sid="221085661098155" type="SpriteFont">
-                                    <param id="0" name="Text">DataBuah.At(int(dataAcak.At(1)-1))</param>
+                                <action id="0" name="Set text" sid="539048368585614" type="SpriteFont">
+                                    <param id="0" name="Text">DataBuah.At(int(dataAcak.At(2)-1))</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -280,7 +294,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="890947986591942" type="SpriteFont">
-                                    <param id="0" name="Text">DataBuah.At(int(dataAcak.At(1)-1))</param>
+                                    <param id="0" name="Text">DataBuah.At(int(dataAcak.At(2)-1))</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -292,7 +306,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="701600051255773" type="SpriteFont">
-                                    <param id="0" name="Text">DataBuah.At(int(dataAcak.At(2)-1))</param>
+                                    <param id="0" name="Text">DataBuah.At(int(dataAcak.At(1)-1))</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -312,28 +326,53 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="871316328932826">
+            <conditions>
+                <condition id="-14" name="Pick by unique ID" sid="947772725251425" type="SpriteFont">
+                    <param id="0" name="Unique ID">72</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="252258004929562" type="SpriteFont">
+                    <param id="0" name="Text">dataSoal + 1 &amp; &quot;/10&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="921759961722483">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="336502240958004" type="System">
+                    <param id="0" name="Variable">dataSoal</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">10</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="509802584847333" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="815337521351199" type="popuplose">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+                <action id="0" name="Call function" sid="377294665347248" type="Function">
+                    <param id="0" name="Name">&quot;AnimasiSelesai&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="995646588551571" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-25" name="Go to layout (by name)" sid="674943111736878" type="System">
+                    <param id="0" name="Layout">&quot;Tampilan Awal&quot;</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="639680542422661">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="335868273979216" type="System">
                     <param id="0" name="Variable">gameMulai</param>
-                    <param id="1" name="Comparison">4</param>
-                    <param id="2" name="Value">0</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="871316328932826">
-                    <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="947772725251425" type="SpriteFont">
-                            <param id="0" name="Unique ID">72</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set text" sid="252258004929562" type="SpriteFont">
-                            <param id="0" name="Text">dataSoal + 1 &amp; &quot;/10&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="454650045093601">
                     <conditions>
                         <condition id="3" name="On touched object" sid="341873422494231" type="Touch">
@@ -360,6 +399,16 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="5" name="Set frame" sid="362184264344338" type="popuplose">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="537912063594830" type="Function">
+                                    <param id="0" name="Name">&quot;AnimasiNotif&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-16" name="Wait" sid="818749788428608" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
                                 <action id="-10" name="Add to" sid="468829397403394" type="System">
                                     <param id="0" name="Variable">dataSoal</param>
                                     <param id="1" name="Value">1</param>
@@ -382,30 +431,226 @@
                                 <condition id="-22" name="Else" sid="268062875057989" type="System" />
                             </conditions>
                             <actions>
-                                <action id="-10" name="Add to" sid="215124903534889" type="System">
-                                    <param id="0" name="Variable">dataSoal</param>
-                                    <param id="1" name="Value">1</param>
+                                <action id="5" name="Set frame" sid="813931827761698" type="popuplose">
+                                    <param id="0" name="Frame number">0</param>
                                 </action>
-                                <action id="-16" name="Set opacity" sid="962924232768085" type="SpriteFont">
+                                <action id="0" name="Call function" sid="326498581974873" type="Function">
+                                    <param id="0" name="Name">&quot;AnimasiNotif&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-16" name="Wait" sid="245149309411238" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="255827174709487">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="965214738173979" type="table_">
+                                    <param id="0" name="Instance variable">id</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">SpriteFont.id</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="LiteTween" id="10" name="Start" sid="842771013864150" type="table_">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="866739201480727" type="table_">
+                                    <param id="0" name="Target is">4</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">385</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="330789056525605" type="table_">
+                                    <param id="0" name="Target is">5</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">99</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="910087156278919" type="System">
+                                    <param id="0" name="Seconds">0.23</param>
+                                </action>
+                                <action behavior="LiteTween" id="10" name="Start" sid="391551438905737" type="table_">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="237852188915360" type="table_">
+                                    <param id="0" name="Target is">4</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">Self.savex</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="221202959156220" type="table_">
+                                    <param id="0" name="Target is">5</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">Self.savey</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="712090045391690" type="SpriteFont">
                                     <param id="0" name="Opacity">50</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="454393067290049">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="118932035625097" type="table_">
+                                            <param id="0" name="Instance variable">id</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">SpriteFont.UID</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Set opacity" sid="736068860165483" type="table_">
+                                            <param id="0" name="Opacity">50</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="454393067290049">
+        <event-block sid="568965756634709">
             <conditions>
-                <condition id="-7" name="Compare instance variable" sid="118932035625097" type="table_">
-                    <param id="0" name="Instance variable">id</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">SpriteFont.UID</param>
+                <condition id="0" name="On function" sid="400922972045866" type="Function">
+                    <param id="0" name="Name">&quot;AnimasiNotif&quot;</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-16" name="Set opacity" sid="736068860165483" type="table_">
-                    <param id="0" name="Opacity">50</param>
+                <action id="-4" name="Set layer visible" sid="667440392611879" type="System">
+                    <param id="0" name="Layer">&quot;NotifSalah&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="475880458633852" type="hitam">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-7" name="Set size" sid="356216689524496" type="popuplose">
+                    <param id="0" name="Width">0</param>
+                    <param id="1" name="Height">0</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="544897507758817" type="hitam">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="761496899596884" type="hitam">
+                    <param id="0" name="Target is">3</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">75</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="234890380596616" type="popuplose">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="210001883787337" type="popuplose">
+                    <param id="0" name="Target is">4</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">596</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="513727754794702" type="popuplose">
+                    <param id="0" name="Target is">5</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">437</param>
+                </action>
+                <action id="-16" name="Wait" sid="164318710497826" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="739303540603561" type="hitam">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="583106720282309" type="hitam">
+                    <param id="0" name="Target is">3</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">0</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="216267366632122" type="popuplose">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="303518625601676" type="popuplose">
+                    <param id="0" name="Target is">4</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="352886284937315" type="popuplose">
+                    <param id="0" name="Target is">5</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="432268040278128" type="System">
+                    <param id="0" name="Layer">&quot;NotifSalah&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="721875961341328">
+            <conditions>
+                <condition id="0" name="On function" sid="846320066747752" type="Function">
+                    <param id="0" name="Name">&quot;AnimasiSelesai&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="184902091349964" type="System">
+                    <param id="0" name="Layer">&quot;MenuAkhir&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="631314183028218" type="hitam">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-7" name="Set size" sid="261262798745420" type="popuplose">
+                    <param id="0" name="Width">0</param>
+                    <param id="1" name="Height">0</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="875210665639202" type="hitam">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="534839694729449" type="hitam">
+                    <param id="0" name="Target is">3</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">25</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="752690364323765" type="popuplose">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="428605726940638" type="popuplose">
+                    <param id="0" name="Target is">4</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">596</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="535180232087804" type="popuplose">
+                    <param id="0" name="Target is">5</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">437</param>
+                </action>
+                <action id="-16" name="Wait" sid="118737662439088" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="430516836714671" type="hitam">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="616958843827076" type="hitam">
+                    <param id="0" name="Target is">3</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">0</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="198545164568978" type="popuplose">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="440804241284381" type="popuplose">
+                    <param id="0" name="Target is">4</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="252973377731073" type="popuplose">
+                    <param id="0" name="Target is">5</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="438293928711304" type="System">
+                    <param id="0" name="Layer">&quot;MenuAkhir&quot;</param>
+                    <param id="1" name="Visibility">0</param>
                 </action>
             </actions>
         </event-block>
