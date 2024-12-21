@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Chris Kent" id="SpriteFontPlus" version="1">SpriteFont+</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -19,7 +20,9 @@
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
     </used-plugins>
-    <used-behaviors />
+    <used-behaviors>
+        <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -1431,7 +1434,14 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="id" sid="108587336043277" type="number" />
+                <instance-variable name="savex" sid="951214312103835" type="number" />
+                <instance-variable name="savey" sid="792992032345857" type="number" />
             </instance-variables>
+            <behaviors>
+                <behavior-type name="LiteTween" sid="154919766497415">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="873471856502320" speed="5">
                     <frame duration="1" hotspotX="0.50137" hotspotY="0.506667" original-source="E:\Asset\Jungle-GUI-PNG\PNG\match3\table_2.png">
@@ -1451,8 +1461,13 @@
         </object-type>
         <object-type name="popuplose" sid="566384887795195">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="560690228622514">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="808471385506876" speed="5">
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="808471385506876" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.501144" original-source="E:\Asset\Jungle-GUI-PNG\popup-lose.png">
                         <collision-poly>
                             <point x="0.0201342" y="0.02746" />
@@ -1466,6 +1481,18 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.501144" original-source="E:\Asset\Jungle-GUI-PNG\popup-win.png">
+                        <collision-poly>
+                            <point x="0.0201342" y="0.02746" />
+                            <point x="0.5" y="0" />
+                            <point x="0.966443" y="0.0457666" />
+                            <point x="0.983221" y="0.498856" />
+                            <point x="0.966443" y="0.954233" />
+                            <point x="0.5" y="0.979405" />
+                            <point x="0.033557" y="0.954233" />
+                            <point x="0.00503356" y="0.498856" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501144">
                         <collision-poly>
                             <point x="0.0201342" y="0.02746" />
                             <point x="0.5" y="0" />
@@ -1509,6 +1536,91 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="SpriteFont2" sid="176364168469827">
+            <plugin id="SpriteFontPlus" />
+            <texture />
+        </object-type>
+        <object-type name="hitam" sid="249053583409344">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="897788594257927">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="535868371838414" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite12" sid="106815280837260">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="527526952551356" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TableBuah2" sid="783536126126545">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="816236533431516" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501114" original-source="E:\Asset\Jungle-GUI-PNG\Table-tampil-buah.png">
+                        <collision-poly>
+                            <point x="0.0223881" y="0.0200445" />
+                            <point x="0.5" y="0.00445434" />
+                            <point x="0.957711" y="0.0378619" />
+                            <point x="0.972637" y="0.498886" />
+                            <point x="0.955224" y="0.959911" />
+                            <point x="0.5" y="0.975501" />
+                            <point x="0.039801" y="0.964365" />
+                            <point x="0.00746269" y="0.498886" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TableBuah3" sid="669302738165754">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="111208224095763" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501114" original-source="E:\Asset\Jungle-GUI-PNG\Table-tampil-buah.png">
+                        <collision-poly>
+                            <point x="0.0223881" y="0.0200445" />
+                            <point x="0.5" y="0.00445434" />
+                            <point x="0.957711" y="0.0378619" />
+                            <point x="0.972637" y="0.498886" />
+                            <point x="0.955224" y="0.959911" />
+                            <point x="0.5" y="0.975501" />
+                            <point x="0.039801" y="0.964365" />
+                            <point x="0.00746269" y="0.498886" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LocalStorage" sid="843245820885603">
+            <plugin id="LocalStorage" />
+        </object-type>
+        <object-type name="tablemenuakhir" sid="701240956158215">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="171955247219193" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501114" original-source="C:\Users\taufi\Desktop\pjskai\Kuliah\pemrograman permainan\tebak-buah-construct-2-main\Animations\TableBuah\Default\000.png">
+                        <collision-poly>
+                            <point x="0.0223881" y="0.0200445" />
+                            <point x="0.5" y="0.00445434" />
+                            <point x="0.957711" y="0.0378619" />
+                            <point x="0.972637" y="0.498886" />
+                            <point x="0.955224" y="0.959911" />
+                            <point x="0.5" y="0.975501" />
+                            <point x="0.039801" y="0.964365" />
+                            <point x="0.00746269" y="0.498886" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1530,6 +1642,7 @@
         </global-instance>
         <global-instance type="WebStorage" uid="83" />
         <global-instance type="Function" uid="84" />
+        <global-instance type="LocalStorage" uid="57" />
     </global-instances>
     <sounds-folder />
     <music-folder />
